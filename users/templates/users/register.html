@@ -1,0 +1,19 @@
+{% extends 'users/home.html' %}
+
+{% block content %}
+
+    <form  method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            
+
+            
+        <div>
+            <button class="btn btn-primary" type="submit">Sing Up</button>
+        </div>
+    </form>
+ 
+
+
+
+{% endblock content%}
